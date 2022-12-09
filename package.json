@@ -1,0 +1,15 @@
+{
+  "name": "quality-final",
+  "version": "0.0.1",
+  "description": " This project contains automated tests for the QualityWorks UI testing playground.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marvin Gordon",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "cypress": "^12.0.2"
+  }
+}
