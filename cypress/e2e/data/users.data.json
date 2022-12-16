@@ -1,0 +1,76 @@
+{
+  "error_messages": {
+    "invalid_email": "Email is invalid",
+    "missing_email": "Email can't be blank",
+    "invalid_password": "",
+    "missing_password": "Password can't be blank",
+    "incorrect_credentials": "Wrong email or password.",
+    "signup_error": "We're sorry, something went wrong when attempting to sign up."
+  },
+  "test_account": {
+    "username": "user1@qualityw.jm",
+    "password": "P@ssword1"
+  },
+  "incorrect_user": {
+    "username": "-incorrect@user.com",
+    "password": "nukjmP@ssword1"
+  },
+  "users": [
+    {
+      "username": "Jake_Fadel@gmail.com",
+      "password": "DBhK1YgsxpLv2m_0o2sd"
+    },
+    {
+      "username": "Melyna_Spinka@yahoo.com",
+      "password": "ZpqnyhT4FXehdjV33cq5"
+    },
+    {
+      "username": "Ephraim.Murray83@hotmail.com",
+      "password": "EmLbONn9Bmx9kSO4Zgrg"
+    },
+    {
+      "username": "Milan.Feil36@yahoo.com",
+      "password": "#o6M_0Ph#qnXqLEkg#7K"
+    },
+    {
+      "username": "Liza.Feest22@yahoo.com",
+      "password": "svNw7rY3+yoYCfaeuyaG"
+    },
+    {
+      "username": "Aiden.Padberg55@gmail.com",
+      "password": "B6EY#P4zP1iN7BLgjs+0"
+    },
+    {
+      "username": "Linnie_Zulauf@gmail.com",
+      "password": "SbRRhqA4xhb9UAT!Mvcl"
+    },
+    {
+      "username": "Christy.Schamberger53@yahoo.com",
+      "password": "Xmozg3icD6b!k23+1Zr0"
+    },
+    {
+      "username": "Paula.Collier83@yahoo.com",
+      "password": "4yO9ia5SE0WE_qrJTj5M"
+    },
+    {
+      "username": "Yasmeen.Hagenes28@yahoo.com",
+      "password": "J3gi4oOkmFgRTTNt9X+N"
+    },
+    {
+      "username": "Eli.Lemke@yahoo.com",
+      "password": "iO4OARtfGx17914luUEf"
+    },
+    {
+      "username": "Hilda23@gmail.com",
+      "password": "Ur5Hqtdn+7tyKTg9oI0L"
+    },
+    {
+      "username": "Tod_Cummings@gmail.com",
+      "password": "3mPOpim03D_MHjjkN2hv"
+    },
+    {
+      "username": "Jayce53@gmail.com",
+      "password": "JcGQ0sFv3tuGsSGxKgYn"
+    }
+  ]
+}
