@@ -60,7 +60,7 @@ describe("Shopping cart", ()=>{
 		// cy.get(CheckoutPage.checkoutTotal).should('contain', `$${products[product_id].price.toLocalString("en-US")}`)
 		cy.get(CheckoutPage.continuePaymentBtn).click();
 
-		cy.wait(3000);
+		cy.wait(6000);
 		cy.url().should('not.contain', 'order');
 		// cy.get(CheckoutPage.checkoutOrderInvoiceNumber).should('not.be.visible');
 
@@ -92,7 +92,9 @@ describe("Shopping cart", ()=>{
 		cy.get(CheckoutPage.checkoutTotal).should('contain', `$${products[product_id].price.toLocaleString("en-US")}`)
 		
 		cy.get(CheckoutPage.continuePaymentBtn).click();
-
+		cy.get(CheckoutPage.continuePaymentBtn).click();
+		cy.wait(6000);
+		
 		// TODO:: check cart items
 		// check invoice number
 		cy.get(CheckoutPage.checkoutOrderInvoiceNumber).should('be.visible');
