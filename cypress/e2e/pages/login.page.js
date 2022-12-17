@@ -1,8 +1,6 @@
 const fs = require('fs')
 
-import Page from "./page.js"
-
-class Login extends Page{
+class Login {
 	get btnSignInTab(){
 		return "ul.auth0-lock-tabs li:first-child"
 	}
