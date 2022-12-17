@@ -1,0 +1,17 @@
+{
+    "sort": {
+        "Low to High": "lowToHigh",
+        "High to Low": "highToLow",
+        "A to Z": "aToZ",
+        "Z to A": "zToA"
+    },
+    
+    "category": {
+        "Shirts": "shirt",
+        "Pants": "pant",
+        "Hats": "hat",
+        "Shoes": "shoes",
+        "Couch/Sofa": "couch",
+        "Laptops": "laptop"
+    }
+}
