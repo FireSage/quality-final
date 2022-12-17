@@ -4,7 +4,7 @@ import routes from '../data/routes.data.json'
 import users from '../data/users.data.json'
 import products from '../data/products.data.json'
 
-//TODO:: Test prices and totals
+//TODO:: confirm product names in cart
 
 describe("Products", ()=>{
 	beforeEach(()=>{
