@@ -105,15 +105,28 @@ describe('Sort', () => {
     });
 
     it('should be able to reset the products', () => {
-
-        //changing drop down value
+        // copy products array
+        let products_copy = JSON.parse(JSON.stringify(products));; 
+        
         productPage.selectSort(sort['Low to High']);
-        //clicking the reset button
+
+        //sorting in ascending order
+        products_copy.sort((a, b) => {
+            return a.price - b.price
+        });
+
+        cy.wait(1500);
+        //checking if they are in the same order as the copied array
+        cy.get(productPage.productPriceList).each(($elem, index) => {
+
+            expect($elem.text()).equal(`$${products_copy[index].price}`);
+        });
+
+        //reset
         cy.get("#reset").click();
 
         cy.wait(1500);
-        //cycling through the elements
-        //checking if they are in the same order
+        //checking if they are in the same order as original array
         cy.get(productPage.productPriceList).each(($elem, index) => {
 
             expect($elem.text()).equal(`$${products[index].price}`);
