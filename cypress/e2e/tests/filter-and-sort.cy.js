@@ -110,7 +110,7 @@ describe('Sort', () => {
     });
 
     it('should be able to reset the products', () => {
-        
+
         productPage.selectSort(sort['Low to High']);
 
         //sorting in ascending order
@@ -119,7 +119,7 @@ describe('Sort', () => {
         });
 
         cy.wait(1500);
-        //checking if they are in the same order as the copied array
+        //checking if they are in the same order as original array
         cy.get(productPage.productPriceList).each(($elem, index) => {
 
             expect($elem.text()).equal(`$${products[index].price}`);
