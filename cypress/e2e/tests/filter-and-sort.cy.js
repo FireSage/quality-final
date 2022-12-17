@@ -4,8 +4,13 @@ import { sort } from '../data/search-sort.data.json';
 import products from '../data/products.data.json';
 import productPage from '../pages/product.page'
 
-describe('Sort', () => {
+let products_copy;
 
+describe('Sort', () => {
+    before(()=>{
+        // copy products array
+        products_copy = JSON.parse(JSON.stringify(products));
+    });
     beforeEach(() => {
 
         cy.visit("");
@@ -105,18 +110,29 @@ describe('Sort', () => {
     });
 
     it('should be able to reset the products', () => {
-
-        //changing drop down value
+        
         productPage.selectSort(sort['Low to High']);
-        //clicking the reset button
-        cy.get("#reset").click();
+
+        //sorting in ascending order
+        products.sort((a, b) => {
+            return a.price - b.price
+        });
 
         cy.wait(1500);
-        //cycling through the elements
-        //checking if they are in the same order
+        //checking if they are in the same order as the copied array
         cy.get(productPage.productPriceList).each(($elem, index) => {
 
             expect($elem.text()).equal(`$${products[index].price}`);
+        });
+
+        //reset
+        cy.get("#reset").click();
+
+        cy.wait(1500);
+        //checking if they are in the same order as original array
+        cy.get(productPage.productPriceList).each(($elem, index) => {
+
+            expect($elem.text()).equal(`$${products_copy[index].price}`);
         });
     });
 
