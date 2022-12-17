@@ -9,7 +9,7 @@ import products from '../data/products.data.json'
 describe("Products", ()=>{
 	beforeEach(()=>{
 		LoginPage.login(users.test_account.username, users.test_account.password);
-		cy.visit(routes.products)
+		cy.visit(routes.products);
 	});
 
 	it("Add a single product to the shopping cart", ()=>{

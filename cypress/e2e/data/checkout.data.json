@@ -1,0 +1,26 @@
+{
+	"name": "Jon Dow", 
+	"email": "email1@qualityw.jm", 
+	"street": "kingston street", 
+	"apt": "1", 
+	"city": "Kingston", 
+	"country": "JM", 
+	"province": "St Andrew", 
+	"postalcode": "00000",
+	"error":{
+		"email": "This field is required", 
+		"city": "This field is required", 
+		"country": "This field is required", 
+		"postalcode": "This field is required"
+	},
+	"card":{
+		"number": "4487937368330376",
+		"cvc": "940",
+		"expiry": "07/30"
+	},
+	"invalid_card":{
+		"number": "4487938330376",
+		"cvc": "90",
+		"expiry": "30"
+	}
+}
