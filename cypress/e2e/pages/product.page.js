@@ -26,6 +26,10 @@ class Products {
 		return `#product-${productNumber} > div:nth-child(2)  div:nth-child(1) div:nth-child(1) p`
 	}
 
+	getProductImageSelector(productNumber){
+		return `#product-${productNumber} > div:nth-child(1) > div`
+	}
+
 
 	addProductToCart(productNumber, quantity){
 		const selector = this.getAddToCartBtnSelector(productNumber);
