@@ -132,6 +132,7 @@ dist
 allure-results/
 
 
+cypress/results
 cypress/videos
 cypress/screenshots
 cypress/downloads/*
