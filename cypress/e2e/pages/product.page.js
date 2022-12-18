@@ -61,6 +61,10 @@ class Products {
 		return `#product-${productNumber} > div:nth-child(2)  div:nth-child(1) div:nth-child(1) p`
 	}
 
+	getProductImageSelector(productNumber){
+		return `#product-${productNumber} > div:nth-child(1) > div`
+  }
+  
 	getProductCategorySelector(productNumber){
 		return `#product-${productNumber} > div:nth-child(2)  div:nth-child(1) div:nth-child(3) span`
 	}
