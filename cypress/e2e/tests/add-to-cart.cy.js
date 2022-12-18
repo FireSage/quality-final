@@ -4,12 +4,12 @@ import routes from '../data/routes.data.json'
 import users from '../data/users.data.json'
 import products from '../data/products.data.json'
 
-//TODO:: Test prices and totals
+//TODO:: confirm product names in cart
 
 describe("Products", ()=>{
 	beforeEach(()=>{
 		LoginPage.login(users.test_account.username, users.test_account.password);
-		cy.visit(routes.products)
+		cy.visit(routes.products);
 	});
 
 	it("Add a single product to the shopping cart", ()=>{

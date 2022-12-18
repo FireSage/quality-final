@@ -8,6 +8,41 @@ class Products {
 		return '.snipcart-cart-header__close-button';
 	}
 
+	 get sortOptions(){
+        return ('[id="field-:r2:-label"]');
+    }
+
+
+    get selectSortDropDown() { 
+        return ('#sort'); 
+    }
+
+    get selectSearchDropDown(){
+        return ('[id="field-:r3:-label"]');
+    }
+
+    get selectCategoryDropDown(){
+        return ('#category');
+    }
+
+    get searchTextField(){
+        return ('#search');
+    }
+
+
+    get productPriceList(){
+        return ('.chakra-container:nth-child(2) > div:nth-child(3) > .chakra-stack >div:nth-child(2) >div:first-child >div:nth-child(3) p');
+    }
+
+    get productNameList(){
+        return ('.chakra-container:nth-child(2) > div:nth-child(3) > .chakra-stack >div:nth-child(2) >div:first-child >div:nth-child(1) p');
+    }
+
+    get productCategoryList(){
+        return ('.chakra-container:nth-child(2) > div:nth-child(3) > .chakra-stack >div:nth-child(2) >div:first-child >div:nth-child(3) span');
+    }
+
+
 	getAddToCartBtnSelector(productNumber){
 		return `#product-${productNumber} #add-to-cart`
 	}
@@ -28,6 +63,10 @@ class Products {
 
 	getProductImageSelector(productNumber){
 		return `#product-${productNumber} > div:nth-child(1) > div`
+  }
+  
+	getProductCategorySelector(productNumber){
+		return `#product-${productNumber} > div:nth-child(2)  div:nth-child(1) div:nth-child(3) span`
 	}
 
 
@@ -43,6 +82,10 @@ class Products {
 		cy.get(selector).click();
 
 	}
+
+	selectSort(sort) {
+        cy.get(this.selectSortDropDown).select(sort)
+    }
 }
 
 module.exports = new Products();

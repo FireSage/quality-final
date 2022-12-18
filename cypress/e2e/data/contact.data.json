@@ -1,0 +1,9 @@
+{
+	"firstName":"Jane",
+	"lastName":"Dopple",
+	"email":"email12@cwj.com",
+	"subject":"Message subject",
+	"emailMessage":"This is a message",
+	"success_alert":"Message Sent",
+	"requiredError":"Field is required!"
+}
