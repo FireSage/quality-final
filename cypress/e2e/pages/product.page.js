@@ -1,4 +1,11 @@
 class Products {
+	get aboutBtn(){
+		return '#top-about'
+	}
+
+	get contactBtn(){
+		return '#top-contact'
+	}
 
 	get cartCount(){
 		return '.snipcart-cart-header__option';
