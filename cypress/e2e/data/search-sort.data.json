@@ -13,5 +13,14 @@
         "Shoes": "shoes",
         "Couch/Sofa": "couch",
         "Laptops": "laptop"
+    },
+    "search_term":{
+        "Shirts": "shirt",
+        "Pants": "pant",
+        "Hats": "hat",
+        "Shoes": "shoes",
+        "Couch/Sofa": "couch",
+        "Laptops": "laptop"
+
     }
 }

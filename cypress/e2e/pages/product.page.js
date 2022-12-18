@@ -21,6 +21,10 @@ class Products {
         return ('[id="field-:r3:-label"]');
     }
 
+    get selectCategoryDropDown(){
+        return ('#category');
+    }
+
     get searchTextField(){
         return ('#search');
     }
@@ -32,6 +36,10 @@ class Products {
 
     get productNameList(){
         return ('.chakra-container:nth-child(2) > div:nth-child(3) > .chakra-stack >div:nth-child(2) >div:first-child >div:nth-child(1) p');
+    }
+
+    get productCategoryList(){
+        return ('.chakra-container:nth-child(2) > div:nth-child(3) > .chakra-stack >div:nth-child(2) >div:first-child >div:nth-child(3) span');
     }
 
 
@@ -51,6 +59,10 @@ class Products {
 
 	getProductNameSelector(productNumber){
 		return `#product-${productNumber} > div:nth-child(2)  div:nth-child(1) div:nth-child(1) p`
+	}
+
+	getProductCategorySelector(productNumber){
+		return `#product-${productNumber} > div:nth-child(2)  div:nth-child(1) div:nth-child(3) span`
 	}
 
 

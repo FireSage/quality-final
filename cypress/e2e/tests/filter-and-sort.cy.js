@@ -2,7 +2,7 @@ import Authentication from '../pages/login.page';
 import {test_account} from '../data/users.data';
 import { sort } from '../data/search-sort.data.json';
 import products from '../data/products.data.json';
-import productPage from '../pages/product.page'
+import productPage from '../pages/product.page';
 
 let products_copy;
 
